@@ -22,5 +22,6 @@ public class MenuMain extends Activity {
 		((TextView) findViewById(R.id.source)).setText(pkg.getSource());
 		((TextView) findViewById(R.id.priority)).setText(pkg.getPriority());
 		((TextView) findViewById(R.id.section)).setText(pkg.getSection());
+		((TextView) findViewById(R.id.version)).setText(pkg.getLatestVersion());
 	}
 }

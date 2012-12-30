@@ -7,13 +7,37 @@
     android:paddingLeft="15dp"
     android:paddingTop="10dp" >
 
-    <TextView
-        android:id="@+id/source"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="3dp"
-        android:text="dput-ng"
-        android:textSize="16sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="frucksbox"
+            android:textSize="16sp" />
+        
+        <TextView
+            android:id="@+id/dummyslash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="/"
+            android:textSize="16sp" />
+       
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="1.3.3"
+            android:textSize="16sp" />
+        
+        
+        
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,19 +47,18 @@
             android:id="@+id/priority"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/text_grey"
             android:text="extra"
-            android:textSize="14sp" />
-        
-        <TextView
-            android:id="@+id/section"
-            android:paddingLeft="5dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:textColor="@color/text_grey"
-            android:text="python"
             android:textSize="14sp" />
 
+        <TextView
+            android:id="@+id/section"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:text="python"
+            android:textColor="@color/text_grey"
+            android:textSize="14sp" />
     </LinearLayout>
 
 </LinearLayout>
