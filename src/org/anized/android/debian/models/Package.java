@@ -15,7 +15,9 @@ import java.util.Map;
  * POJO for holding PTS Package data off the line.
  */
 public class Package {
+	
 	private Map<String, String> versions;
+	private String source;
 	private String latestVersion;
 	private String standardsVersion;
 	private String priority;
@@ -37,6 +39,8 @@ public class Package {
 		this.standardsVersion = "3.4.3";
 		this.priority = "extra";
 		this.section = "python";
+		
+		this.source = "foo";
 		
 		this.binaryPackages = new ArrayList<String>();
 		this.binaryPackages.add("foo");
@@ -157,5 +161,13 @@ public class Package {
 
 	public void setUploaders(List<Developer> uploaders) {
 		this.uploaders = uploaders;
+	}
+
+	public String getSource() {
+		return source;
+	}
+
+	public void setSource(String source) {
+		this.source = source;
 	}
 }
